@@ -1,8 +1,9 @@
-const swiper = new Swiper(".projects-container", {
+const swiper = new Swiper(".slide-content", {
   slidesPerView: 1,
-  spaceBetween: 20, // Adjust space between slides
+  spaceBetween: 30, // Adjust space between slides
   loop: true,
   centeredSlides: true,
+  loopFillGroupWithBlank: true,
   grabCursor: true,
   navigation: {
     nextEl: ".swiper-button-next",
