@@ -1,0 +1,39 @@
+@import URL("./index.css");
+
+/* ABOUT TEXT */
+
+/* CAROUSEL */
+.carousel {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.card-name {
+  font-size: 0.7rem;
+  color: var(--text-color);
+}
+
+.card-list .skill-card {
+  background: linear-gradient(145deg, #e07a5f, #e07b5f);
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2),
+    -10px -10px 20px rgba(255, 255, 255, 0.5);
+  width: 100px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 2rem;
+  padding: 5px;
+  border: 1px solid darkmagenta;
+}
+
+.skill-image {
+  height: 50px;
+  width: 50px;
+}

@@ -1,0 +1,57 @@
+/* Hamburger Nav */
+
+.mobile-nav-bar {
+  justify-content: center;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+  margin: 2rem;
+}
+
+.hamburger-icon {
+  transition: none;
+  align-self: center;
+  border: none;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-color: var(--background-color);
+}
+
+.hamburger-icon-img {
+  height: 100%;
+  width: 100%;
+  fill: var(--text-color);
+}
+
+.hamburger-icon-img:hover {
+  transform: scale(1.2);
+}
+
+.hamburger-nav-links {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--background-color);
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.1s ease-in-out;
+  z-index: 1000;
+}
+
+.hamburger-nav-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.hamburger-nav-links.open {
+  max-height: 300px;
+}

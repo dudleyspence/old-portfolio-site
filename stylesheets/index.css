@@ -1,0 +1,68 @@
+/* imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* Light mode colors */
+  --background-color: rgb(244, 241, 222);
+  --text-color: rgb(61, 64, 91);
+  --primary-color: rgb(129, 178, 154);
+  /* --card-background: rgb(61, 64, 91, 0.4); */
+}
+
+/* Dark mode overrides */
+body.dark-mode {
+  --background-color: #3d405b;
+  --text-color: #f4f1de;
+  --primary-color: #81b29a; /* Assuming you want to keep the same primary color */
+  /* --card-background: rgb(244, 241, 222, 0.4); */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: light;
+}
+
+/* when we click links to nav will scroll down in smooth movement */
+html {
+  scroll-behavior: smooth;
+}
+
+p,
+h1 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+
+h3 {
+  color: var(--primary-color);
+}
+
+.theme-text {
+  color: var(--background-color);
+}
+
+/* ALL SECTIONS */
+
+section {
+  height: 95vh;
+  margin: 0 7vw;
+  padding-top: 5vh;
+}
+
+.section-container {
+  height: fit-content;
+}
+
+.section-title {
+  color: var(--text-color);
+  margin-bottom: 3rem;
+}

@@ -1,0 +1,14 @@
+.website-logo {
+  height: 10vh;
+}
+
+.website-logo:hover {
+  cursor: default;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  height: 10vh;
+}

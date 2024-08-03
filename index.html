@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Site</title>
+    <link rel="stylesheet" href="./stylesheets/index.css" />
+    <link rel="stylesheet" href="./stylesheets/header.css" />
+    <link rel="stylesheet" href="./stylesheets/nav.css" />
+    <link rel="stylesheet" href="./stylesheets/profile.css" />
+    <link rel="stylesheet" href="./stylesheets/about.css" />
+    <link rel="stylesheet" href="./stylesheets/experience.css" />
+    <link rel="stylesheet" href="./stylesheets/projects.css" />
+    <link rel="stylesheet" href="./stylesheets/contact.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- <link rel="stylesheet" href="./screensize-queries.css" /> -->
+    <script src="./index.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="/swiper.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img
+        id="website-logo"
+        class="website-logo"
+        src="./assets/header/DudleyLogo-light-mode.png"
+        alt="Dudley Spence Logo"
+      />
+      <nav class="mobile-nav-bar">
+        <menu class="hamburger-menu">
+          <button class="hamburger-icon" id="hamburger-icon">
+            <img
+              id="hamburger-icon-img"
+              class="hamburger-icon-img"
+              src="./assets/header/Hamburger-icon-light-mode.svg"
+              alt="Open navigation Menu"
+            />
+          </button>
+          <ul class="hamburger-nav-links" id="hamburger-nav-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </menu>
+      </nav>
+    </header>
+    <main>
+      <section id="profile">
+        <figure class="profile-img-container">
+          <img
+            src="./assets/profile/profile-img.png"
+            alt="a black and white profile image of Dudley on a contrasting orange background"
+            class="profile-img"
+          />
+        </figure>
+        <div class="profile-text-content">
+          <h1 class="profile-text-1">Dudley Spence</h1>
+          <h3 class="profile-text-2">Software Developer</h3>
+          <div class="homepage-buttons">
+            <a href="./assets/profile/dudley-spence-CV.pdf" download>
+              <button class="cv-button">Download CV</button>
+            </a>
+            <button
+              class="contact-button"
+              onclick="location.href('./#contact')"
+            >
+              Contact Info
+            </button>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/dudleyspence">
+              <img
+                id="githubIcon"
+                class="icon"
+                src="./assets/profile/github-light-mode.png"
+                alt="the github logo"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/dudleyspence">
+              <img
+                id="linkedinIcon"
+                class="icon"
+                src="./assets/profile/linkedin-light-mode.png"
+                alt="the linkedIn logo"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <h1 class="section-title">About</h1>
+        <div class="section-container">
+          <article class="about-text-container">
+            <p>
+              With a Master's in Computer Science and hands-on training from the
+              Northcoders bootcamp, I've developed a solid foundation in modern
+              programming. My commitment to continuous learning drives me to
+              stay up-to-date with the latest technologies.
+            </p>
+            <p>
+              Check out my toolkit below, featuring the languages, frameworks,
+              and technologies that I use to bring ideas to life and tackle
+              diverse challenges in development.
+            </p>
+          </article>
+          <div class="carousel">
+            <div>
+            <div class="card-list"></div>
+          </div>
+        </div>
+      </section>
+      <section id="experience">
+        <h1 class="section-title">Experience</h1>
+        <div class="section-container"></div>
+      </section>
+      <section id="projects">
+        <h1 class="section-title">Projects</h1>
+        <div class="section-container" id="project-container">
+          <div class="slide-container">
+            <div class="slide-content">
+              <div class="card-wrapper">
+                <div class="card">
+
+                  <h1 class="project-title">
+                    Solving the N-puzzle using Deep Reinforcement Learning
+                  </h1>
+                  <h3>Python, tensorflow, numpy</h3>
+                  <p>
+                    My MSc Computer Science dissertation used python and
+                    tensorflow to create a deep reinforcement learning model
+                    that learns to solve the N-puzzle.
+                  </p>
+                  <img
+                    class="card-image"
+                    src="./assets/projects/n-puzzle.png"
+                    alt="n-puzzle image"
+                  />
+                  <div class="project-controls">
+                    <a href="https://github.com/dudleyspence/N-Puzzle-DQN.git">
+                      <img
+                        id="githubIcon"
+                        class="icon"
+                        src="./assets/profile/github-light-mode.png"
+                        alt="the github logo"
+                      />
+                    </a>
+                    <button class="project-buttton">Download</button>
+                  </div>
+                </div>
+          
+              </div>
+              <div class="card-wrapper">
+                <div class="card">
+                  <h1 class="project-title">be-news-api</h1>
+                  <h3>JavaScript, Node.js, PSQL, express.js</h3>
+                  <p>
+                    A Reddit-style social media/blog API using PostgreSQL for
+                    data management and Express.js for a RESTful API. The
+                    project features TDD with Jest and Supertest, and it's
+                    deployed on Render with Supabase for the database.
+                  </p>
+                  <img
+                    class="card-image"
+                    src="./assets/projects/api-image.jpeg"
+                    alt="screenshot of be-news-api"
+                  />
+                  <div class="project-controls">
+                    <a href="https://github.com/dudleyspence/be-news-api">
+                      <img
+                        id="githubIcon"
+                        class="icon"
+                        src="./assets/profile/github-light-mode.png"
+                        alt="the github logo"
+                      />
+                    </a>
+                    <button class="project-buttton">View Site</button>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="card-wrapper">
+                <div class="card">
+                  <h1 class="project-title">TrailTalk</h1>
+                  <h3>JavaScript, React.js, HTML, CSS</h3>
+                  <p>
+                    A Reddit-style social media/blog platform for hikers to
+                    connect and read related news. Built using React,
+                    JavaScript, HTML, React Router, and CSS for the frontend,
+                    this project integrates seamlessly with my be-news-api
+                    backend.
+                  </p>
+                  <img
+                    class="card-image"
+                    src="./assets/projects/trailtalk.png"
+                    alt="screenshot of trailtalk"
+                  />
+                  <div class="project-controls">
+                    <a href="https://github.com/dudleyspence">
+                      <img
+                        id="githubIcon"
+                        class="icon"
+                        src="./assets/profile/github-light-mode.png"
+                        alt="the github logo"
+                      />
+                    </a>
+                    <button class="project-buttton">View Site</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h1 class="section-title">Contact</h1>
+        <div class="section-container"></div>
+      </section>
+    </main>
+    <footer>
+      <button id="toggle-dark-light">
+        <p class="theme-text">Dark Mode</p>
+      </button>
+    </footer>
+  </body>
+</html>
