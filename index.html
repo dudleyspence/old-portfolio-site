@@ -132,58 +132,59 @@
                   <h1 class="project-title">
                     Solving the N-puzzle using Deep Reinforcement Learning
                   </h1>
-                  <h3>Python, tensorflow, numpy</h3>
+                  <p class="skills-used">Python, tensorflow, numpy</p>
                   <p>
                     My MSc Computer Science dissertation used python and
                     tensorflow to create a deep reinforcement learning model
                     that learns to solve the N-puzzle.
                   </p>
-                  <img
-                    class="card-image"
-                    src="./assets/projects/n-puzzle.png"
-                    alt="n-puzzle image"
-                  />
                   <div class="project-controls">
                     <a href="https://github.com/dudleyspence/N-Puzzle-DQN.git">
                       <img
-                        id="githubIcon"
+                        id="projectGithubIcon"
                         class="icon"
-                        src="./assets/profile/github-light-mode.png"
+                        src="./assets/projects/github-light-mode.png"
                         alt="the github logo"
                       />
                     </a>
-                    <button class="project-buttton">Download</button>
+                    <button class="project-button">Download</button>
                   </div>
+                  <img
+                  class="card-image"
+                  src="./assets/projects/n-puzzle.png"
+                  alt="n-puzzle image"
+                />
                 </div>
                 <div class="card swiper-slide">
                   <h1 class="project-title">be-news-api</h1>
-                  <h3>JavaScript, Node.js, PSQL, express.js</h3>
+                  <p class="skills-used" >JavaScript, Node.js, PSQL, express.js</p>
                   <p>
                     A Reddit-style social media/blog API using PostgreSQL for
                     data management and Express.js for a RESTful API. The
                     project features TDD with Jest and Supertest, and it's
                     deployed on Render with Supabase for the database.
                   </p>
-                  <img
-                    class="card-image"
-                    src="./assets/projects/api-image.jpeg"
-                    alt="screenshot of be-news-api"
-                  />
+
                   <div class="project-controls">
                     <a href="https://github.com/dudleyspence/be-news-api">
                       <img
-                        id="githubIcon"
+                        id="projectGithubIcon"
                         class="icon"
-                        src="./assets/profile/github-light-mode.png"
+                        src="./assets/projects/github-light-mode.png"
                         alt="the github logo"
                       />
                     </a>
-                    <button class="project-buttton">View Site</button>
+                    <button class="project-button">View Site</button>
                   </div>
+                  <img
+                  class="card-image"
+                  src="./assets/projects/api-image.jpeg"
+                  alt="screenshot of be-news-api"
+                />
                 </div>
                 <div class="card swiper-slide">
                   <h1 class="project-title">TrailTalk</h1>
-                  <h3>JavaScript, React.js, HTML, CSS</h3>
+                  <p class="skills-used" >JavaScript, React.js, HTML, CSS</p>
                   <p>
                     A Reddit-style social media/blog platform for hikers to
                     connect and read related news. Built using React,
@@ -191,36 +192,52 @@
                     this project integrates seamlessly with my be-news-api
                     backend.
                   </p>
-                  <img
-                    class="card-image"
-                    src="./assets/projects/trailtalk.png"
-                    alt="screenshot of trailtalk"
-                  />
+
                   <div class="project-controls">
                     <a href="https://github.com/dudleyspence">
                       <img
-                        id="githubIcon"
+                        id="projectGithubIcon"
                         class="icon"
-                        src="./assets/profile/github-light-mode.png"
+                        src="./assets/projects/github-light-mode.png"
                         alt="the github logo"
                       />
                     </a>
-                    <button class="project-buttton">View Site</button>
+                    <button class="project-button">View Site</button>
                   </div>
+                  <img
+                  class="card-image"
+                  src="./assets/projects/trailtalk.png"
+                  alt="screenshot of trailtalk"
+                />
                 </div>
               </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
       <section id="contact">
         <h1 class="section-title">Contact</h1>
-        <div class="section-container"></div>
+        <div class="section-container">
+          <div class="contact-form-container">
+            <h3>Get in touch!</h3>
+            <form action="" class="contact-form">
+              
+              <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
+              <input type="email" placeholder="Your Email" name="Your Email" class="contact-input" required>
+              <textarea name="message" class="contact-input" placeholder="Your Message" required></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
-      <button id="toggle-dark-light">
-        <p class="theme-text">Dark Mode</p>
+      <button class="dark-light" id="toggle-dark-light">
+        <img id="toggle-dark-light-img" src="./assets/header/moon.png" alt="dark-mode-button"/>
+      </button>
+      <button href="#profile" class="back-to-home" id="back-to-home">
+        return to home
       </button>
     </footer>
   </body>

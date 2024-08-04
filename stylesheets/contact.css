@@ -1,0 +1,49 @@
+#contact .section-container {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form-container {
+  max-width: 400px;
+  max-height: 550px;
+  border-radius: 8px;
+  height: 60vh;
+  width: 70vw;
+  background-color: var(--primary-color);
+}
+
+.contact-form-container h3 {
+  margin: 1rem;
+  text-align: left;
+  color: var(--background-color);
+}
+
+.contact-form {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 2rem;
+  height: 50vh;
+  flex-direction: column;
+}
+
+.contact-input {
+  border-radius: 3px;
+  border: none;
+  height: 1.5rem;
+  width: 45vw;
+  max-width: 270px;
+  padding-left: 10px;
+  outline: none;
+  font-weight: 400;
+}
+
+textarea {
+  height: 90px !important;
+  padding-top: 10px;
+}

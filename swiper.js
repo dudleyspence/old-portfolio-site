@@ -2,13 +2,16 @@ const swiper = new Swiper(".slide-content", {
   slidesPerView: 1,
   spaceBetween: 30, // Adjust space between slides
   loop: true,
-  centeredSlides: true,
+
+  centerSlide: true,
   loopFillGroupWithBlank: true,
   grabCursor: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
   },
+
   breakpoints: {
     0: {
       slidesPerView: 1, // Single slide view for small screens
@@ -18,6 +21,9 @@ const swiper = new Swiper(".slide-content", {
     },
     1024: {
       slidesPerView: 2, // Two slides view for larger screens
+    },
+    1400: {
+      slidesPerView: 3,
     },
   },
 });

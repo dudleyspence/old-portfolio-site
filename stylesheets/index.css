@@ -7,15 +7,13 @@
   --background-color: rgb(244, 241, 222);
   --text-color: rgb(61, 64, 91);
   --primary-color: rgb(129, 178, 154);
-  /* --card-background: rgb(61, 64, 91, 0.4); */
 }
 
 /* Dark mode overrides */
 body.dark-mode {
   --background-color: #3d405b;
   --text-color: #f4f1de;
-  --primary-color: #81b29a; /* Assuming you want to keep the same primary color */
-  /* --card-background: rgb(244, 241, 222, 0.4); */
+  --primary-color: #81b29a;
 }
 
 * {
@@ -46,10 +44,6 @@ h3 {
   color: var(--primary-color);
 }
 
-.theme-text {
-  color: var(--background-color);
-}
-
 /* ALL SECTIONS */
 
 section {
@@ -64,5 +58,22 @@ section {
 
 .section-title {
   color: var(--text-color);
-  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.dark-light img {
+  height: 30px;
+  width: 30px;
+}
+
+#toggle-dark-light {
+  background-color: var(--background-color) !important;
+  border: none;
+  position: fixed; /* Fixes the button's position relative to the viewport */
+  bottom: 20px; /* Distance from the bottom of the viewport */
+  right: 20px; /* Distance from the right side of the viewport */
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 1000; /* Ensures the button is above other content */
 }
