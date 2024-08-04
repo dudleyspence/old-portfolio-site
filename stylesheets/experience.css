@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 1.5rem;
   color: #f4f1de;
   margin-bottom: 5vh;
 }
@@ -12,9 +11,9 @@
 .flip-card {
   background-color: transparent;
   width: 70vw; /* Adjusted to match your card width */
-  height: 30vh;
+  height: 35vh;
   perspective: 1000px;
-  margin: 1.5rem; /* Add margin to center the card */
+  margin: 1rem; /* Add margin to center the card */
 }
 
 .flip-card-inner {
@@ -50,16 +49,21 @@
 }
 
 .flip-card-back {
-  background-color: #e07a5f;
+  background-color: rgb(129, 178, 154);
   color: #f4f1de;
   transform: rotateY(180deg);
   box-sizing: border-box;
   padding: 30px;
   text-align: left;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.flip-card-back li {
+  font-size: 0.6rem;
 }
 
 .experience {
