@@ -2,7 +2,11 @@
 
 /* ABOUT TEXT */
 
-/* CAROUSEL */
+#about-container {
+  height: 85vh !important;
+}
+
+/* CAROUSEL
 .carousel {
   height: 500px;
   display: flex;
@@ -36,4 +40,4 @@
 .skill-image {
   height: 50px;
   width: 50px;
-}
+} */

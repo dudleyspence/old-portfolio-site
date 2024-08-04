@@ -1,6 +1,6 @@
 #contact .section-container {
   display: flex;
-  height: 80vh;
+  height: 85vh;
   justify-content: center;
   align-items: center;
 }
@@ -17,7 +17,7 @@
 .contact-form-container h3 {
   margin: 1rem;
   text-align: left;
-  color: var(--background-color);
+  color: #f4f1de;
 }
 
 .contact-form {
@@ -46,4 +46,13 @@
 textarea {
   height: 90px !important;
   padding-top: 10px;
+}
+
+#contact-submit {
+  background-color: #f4f1de;
+  color: #81b29a;
+}
+
+#contact-submit:hover {
+  background-color: #e0dacc;
 }

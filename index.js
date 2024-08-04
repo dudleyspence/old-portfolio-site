@@ -45,6 +45,27 @@ document
     }
   });
 
+document.getElementById("toggle-dark-light").addEventListener("click", () => {
+  // Check local storage and apply the theme on page load
+  document.addEventListener("DOMContentLoaded", () => {
+    const theme = localStorage.getItem("theme");
+    if (theme === "dark") {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
+  });
+});
+
+window.onload = function () {
+  // Reset the form fields when the page loads
+  document.getElementById("contact-form").reset();
+};
+
+function toggleFlip(card) {
+  card.classList.toggle("flipped");
+}
+
 // CAROUSEL
 
 // document.addEventListener("DOMContentLoaded", () => {

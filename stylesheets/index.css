@@ -7,6 +7,7 @@
   --background-color: rgb(244, 241, 222);
   --text-color: rgb(61, 64, 91);
   --primary-color: rgb(129, 178, 154);
+  --translucient-background-color: rgb(244, 241, 222, 0.5);
 }
 
 /* Dark mode overrides */
@@ -14,6 +15,7 @@ body.dark-mode {
   --background-color: #3d405b;
   --text-color: #f4f1de;
   --primary-color: #81b29a;
+  --translucient-background-color: rgb(61, 64, 91, 0.5);
 }
 
 * {
@@ -47,19 +49,21 @@ h3 {
 /* ALL SECTIONS */
 
 section {
-  height: 95vh;
+  height: 100vh;
   margin: 0 7vw;
   padding-top: 5vh;
 }
 
 .section-container {
-  height: fit-content;
+  height: 85vh;
 }
 
 .section-title {
   color: var(--text-color);
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  margin: 0;
+  height: 10vh;
+  box-sizing: border-box;
 }
 
 .dark-light img {
@@ -68,12 +72,23 @@ section {
 }
 
 #toggle-dark-light {
-  background-color: var(--background-color) !important;
+  background: none !important;
   border: none;
-  position: fixed; /* Fixes the button's position relative to the viewport */
-  bottom: 20px; /* Distance from the bottom of the viewport */
-  right: 20px; /* Distance from the right side of the viewport */
-  padding: 10px 20px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 5px 5px;
   cursor: pointer;
-  z-index: 1000; /* Ensures the button is above other content */
+  z-index: 1000;
+}
+
+#home-button {
+  background: none !important;
+  border: none;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  padding: 5px 5px;
+  cursor: pointer;
+  z-index: 1000;
 }
