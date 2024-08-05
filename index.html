@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./stylesheets/projects.css" />
     <link rel="stylesheet" href="./stylesheets/contact.css" />
     <link rel="stylesheet" href="./stylesheets/button.css" />
+    <link rel="stylesheet" href="./stylesheets/page-size.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -208,25 +209,34 @@
             <div class="slide-content">
               <div class="card-wrapper swiper-wrapper">
                 <div class="card swiper-slide">
-                  <h1 class="project-title">
-                    Solving the N-puzzle using Deep Reinforcement Learning
-                  </h1>
-                  <p class="skills-used">Python, tensorflow, numpy</p>
-                  <p>
-                    My MSc Computer Science dissertation used python and
-                    tensorflow to create a deep reinforcement learning model
-                    that learns to solve the N-puzzle.
-                  </p>
-                  <div class="project-controls">
-                    <a href="https://github.com/dudleyspence/N-Puzzle-DQN.git">
-                      <img
-                        id="projectGithubIcon"
-                        class="icon"
-                        src="./assets/projects/github-light-mode.png"
-                        alt="the github logo"
-                      />
-                    </a>
-                    <button class="styled-button">Download</button>
+                  <div class="card-text">
+                    <h1 class="project-title">
+                      Solving the N-puzzle using Deep Reinforcement Learning
+                    </h1>
+                    <p class="skills-used">Python, tensorflow, numpy</p>
+                    <p>
+                      My MSc Computer Science dissertation used python and
+                      tensorflow to create a deep reinforcement learning model
+                      that learns to solve the N-puzzle.
+                    </p>
+                    <div class="project-controls">
+                      <a
+                        href="https://github.com/dudleyspence/N-Puzzle-DQN.git"
+                      >
+                        <img
+                          id="projectGithubIcon"
+                          class="icon"
+                          src="./assets/projects/github-light-mode.png"
+                          alt="the github logo"
+                        />
+                      </a>
+                      <a
+                        href="./assets/projects/Solving the N-Puzzle using Deep Reinforcement Learning.pdf"
+                        download
+                      >
+                        <button class="styled-button">Download</button>
+                      </a>
+                    </div>
                   </div>
                   <img
                     class="card-image"
@@ -235,27 +245,31 @@
                   />
                 </div>
                 <div class="card swiper-slide">
-                  <h1 class="project-title">be-news-api</h1>
-                  <p class="skills-used">
-                    JavaScript, Node.js, PSQL, express.js
-                  </p>
-                  <p>
-                    A Reddit-style social media/blog API using PostgreSQL for
-                    data management and Express.js for a RESTful API. The
-                    project features TDD with Jest and Supertest, and it's
-                    deployed on Render with Supabase for the database.
-                  </p>
+                  <div class="card-text">
+                    <h1 class="project-title">be-news-api</h1>
+                    <p class="skills-used">
+                      JavaScript, Node.js, PSQL, express.js
+                    </p>
+                    <p>
+                      A Reddit-style social media/blog API using PostgreSQL for
+                      data management and Express.js for a RESTful API. The
+                      project features TDD with Jest and Supertest, and it's
+                      deployed on Render with Supabase for the database.
+                    </p>
 
-                  <div class="project-controls">
-                    <a href="https://github.com/dudleyspence/be-news-api">
-                      <img
-                        id="projectGithubIcon"
-                        class="icon"
-                        src="./assets/projects/github-light-mode.png"
-                        alt="the github logo"
-                      />
-                    </a>
-                    <button class="styled-button">View Site</button>
+                    <div class="project-controls">
+                      <a href="https://github.com/dudleyspence/be-news-api">
+                        <img
+                          id="projectGithubIcon"
+                          class="icon"
+                          src="./assets/projects/github-light-mode.png"
+                          alt="the github logo"
+                        />
+                      </a>
+                      <a href="https://be-news-api-2ebb.onrender.com/api/">
+                        <button class="styled-button">View Site</button>
+                      </a>
+                    </div>
                   </div>
                   <img
                     class="card-image"
@@ -264,26 +278,28 @@
                   />
                 </div>
                 <div class="card swiper-slide">
-                  <h1 class="project-title">TrailTalk</h1>
-                  <p class="skills-used">JavaScript, React.js, HTML, CSS</p>
-                  <p>
-                    A Reddit-style social media/blog platform for hikers to
-                    connect and read related news. Built using React,
-                    JavaScript, HTML, React Router, and CSS for the frontend,
-                    this project integrates seamlessly with my be-news-api
-                    backend.
-                  </p>
+                  <div class="card-text">
+                    <h1 class="project-title">TrailTalk</h1>
+                    <p class="skills-used">JavaScript, React.js, HTML, CSS</p>
+                    <p>
+                      A Reddit-style social media/blog platform for hikers to
+                      connect and read related news. Built using React,
+                      JavaScript, HTML, React Router, and CSS for the frontend,
+                      this project integrates seamlessly with my be-news-api
+                      backend.
+                    </p>
 
-                  <div class="project-controls">
-                    <a href="https://github.com/dudleyspence">
-                      <img
-                        id="projectGithubIcon"
-                        class="icon"
-                        src="./assets/projects/github-light-mode.png"
-                        alt="the github logo"
-                      />
-                    </a>
-                    <button class="styled-button">View Site</button>
+                    <div class="project-controls">
+                      <a href="https://github.com/dudleyspence">
+                        <img
+                          id="projectGithubIcon"
+                          class="icon"
+                          src="./assets/projects/github-light-mode.png"
+                          alt="the github logo"
+                        />
+                      </a>
+                      <button class="styled-button">View Site</button>
+                    </div>
                   </div>
                   <img
                     class="card-image"
@@ -292,8 +308,8 @@
                   />
                 </div>
               </div>
+              <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>

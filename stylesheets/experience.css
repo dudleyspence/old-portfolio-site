@@ -63,6 +63,7 @@
 }
 
 .flip-card-back li {
+  list-style-position: inside;
   font-size: 0.6rem;
 }
 

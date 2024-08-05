@@ -1,0 +1,57 @@
+@media only screen and (max-width: 812px) and (orientation: landscape),
+  only screen and (min-width: 813px) {
+  #profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-img-container {
+    margin: 0;
+  }
+
+  #experience-container {
+    flex-direction: row;
+  }
+
+  .flip-card {
+    height: 60vh;
+  }
+}
+
+@media only screen and (min-width: 812px) {
+  .experience-features li {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+
+/* landscape mobile only */
+@media only screen and (max-width: 812px) and (orientation: landscape) {
+  .card {
+    display: flex !important;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  .card-image {
+    margin-top: 0;
+  }
+
+  .profile-text-1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .profile-text-2 {
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  .homepage-buttons button {
+    font-weight: 400;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    border-style: solid;
+    font-size: 0.5rem;
+  }
+}

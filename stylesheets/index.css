@@ -7,7 +7,7 @@
   --background-color: rgb(244, 241, 222);
   --text-color: rgb(61, 64, 91);
   --primary-color: rgb(129, 178, 154);
-  --translucient-background-color: rgb(244, 241, 222, 0.5);
+  --translucient-background-color: rgb(244, 241, 222, 0.8);
 }
 
 /* Dark mode overrides */
