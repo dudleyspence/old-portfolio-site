@@ -1,4 +1,3 @@
-/* Wide Screen e.g. landscape mobile or desktop */
 @media only screen and (max-width: 812px) and (orientation: landscape),
   only screen and (min-width: 813px) {
   #profile {
@@ -34,7 +33,7 @@
   }
 }
 
-/* Desktop */
+/* ipad */
 @media only screen and (min-width: 812px) {
   .experience-features li {
     font-size: 0.8rem;
@@ -53,17 +52,40 @@
   #computer-nav {
     display: flex;
   }
+  .nav {
+    margin: 0 5rem 0 5rem;
+  }
   .mobile-nav-bar {
     display: none;
   }
 }
 
-/* BIG DESKTOP */
-@media only screen and (min-width: 1400px) {
+/* DESKTOP */
+@media only screen and (min-width: 1000px) {
   .experience-features li {
     font-size: 1rem;
     padding: 1rem;
     list-style-position: inside;
+  }
+  .skills-container {
+    padding: 8vw;
+    gap: 0.5rem;
+  }
+  .skill-card img {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+/* BIG DESKTOP */
+@media only screen and (min-width: 1400px) {
+  .skills-container {
+    padding: 50px
+    gap: 0.5rem;
+  }
+  .skill-card img {
+    height: 70px;
+    width: 70px;
   }
 }
 
@@ -95,5 +117,15 @@
     border-radius: 2rem;
     border-style: solid;
     font-size: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .about-text-container p {
+    font-size: 0.6rem !important ;
+  }
+  .skill-card img {
+    height: 30px;
+    width: 30px;
   }
 }
