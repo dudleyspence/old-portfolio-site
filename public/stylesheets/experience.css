@@ -49,8 +49,8 @@
 }
 
 .flip-card-back {
-  background-color: rgb(129, 178, 154);
-  color: #f4f1de;
+  background-color: var(--text-color);
+  color: var(--background-colour);
   transform: rotateY(180deg);
   box-sizing: border-box;
   padding: 30px;
@@ -99,6 +99,7 @@
 .course-grade p,
 .experience-date p {
   margin: 0;
+  color: #f4f1de;
 }
 
 .experience h1,
