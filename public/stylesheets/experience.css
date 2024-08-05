@@ -50,7 +50,7 @@
 
 .flip-card-back {
   background-color: var(--text-color);
-  color: var(--background-colour);
+  color: var(--background-color);
   transform: rotateY(180deg);
   box-sizing: border-box;
   padding: 30px;
@@ -106,4 +106,9 @@
 h3 {
   color: #f4f1de;
   margin: 0;
+}
+
+.flip-card:hover {
+  scale: 1.03;
+  tra
 }

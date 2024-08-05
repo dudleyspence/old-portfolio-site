@@ -52,10 +52,11 @@ button {
 }
 
 .homepage-buttons button {
-  font-weight: 500;
-  padding: 1rem;
+  font-weight: 400;
+  padding: 0.7rem;
   border-radius: 2rem;
   border-style: solid;
+  font-size: 0.6rem;
 }
 
 .cv-button {

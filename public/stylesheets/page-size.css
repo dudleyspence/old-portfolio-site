@@ -1,3 +1,4 @@
+/* Wide Screen e.g. landscape mobile or desktop */
 @media only screen and (max-width: 812px) and (orientation: landscape),
   only screen and (min-width: 813px) {
   #profile {
@@ -19,20 +20,50 @@
   }
 }
 
+/* Normal Mobile */
 @media only screen and (max-width: 812px) {
   #project-container {
     align-items: flex-start;
     height: 80vh !important;
   }
+  #computer-nav {
+    display: none;
+  }
+  .mobile-nav-bar {
+    display: flex;
+  }
 }
+
+/* Desktop */
 @media only screen and (min-width: 812px) {
+  .experience-features li {
+    font-size: 0.8rem;
+    padding: 1rem;
+    list-style-position: inside;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+  .card-text p {
+    font-size: 0.8rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #computer-nav {
+    display: flex;
+  }
+  .mobile-nav-bar {
+    display: none;
+  }
+}
+
+/* BIG DESKTOP */
+@media only screen and (min-width: 1400px) {
   .experience-features li {
     font-size: 1rem;
     padding: 1rem;
-  }
-  .flip-card-back li {
     list-style-position: inside;
-    font-size: 0.6;
   }
 }
 

@@ -55,3 +55,31 @@
 .hamburger-nav-links.open {
   max-height: 300px;
 }
+
+/*  Computer Nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  margin: 0 5rem 0 5rem;
+}
+
+.nav-bar-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-size: 1.4rem;
+  z-index: 1000;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+  text-underline-offset: 0.8rem;
+}
