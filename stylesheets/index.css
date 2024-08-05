@@ -49,13 +49,13 @@ h3 {
 /* ALL SECTIONS */
 
 section {
-  height: 100vh;
   margin: 0 7vw;
   padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 .section-container {
-  height: 85vh;
+  height: 80vh;
 }
 
 .section-title {

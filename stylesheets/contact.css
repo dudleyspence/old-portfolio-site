@@ -1,8 +1,9 @@
 #contact .section-container {
   display: flex;
-  height: 85vh;
+  height: 8vh;
   justify-content: center;
   align-items: center;
+  height: 80vh;
 }
 
 .contact-form-container {

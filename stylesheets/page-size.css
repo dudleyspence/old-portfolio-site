@@ -19,6 +19,12 @@
   }
 }
 
+@media only screen and (max-width: 812px) {
+  #project-container {
+    align-items: flex-start;
+    height: 80vh !important;
+  }
+}
 @media only screen and (min-width: 812px) {
   .experience-features li {
     font-size: 1rem;
