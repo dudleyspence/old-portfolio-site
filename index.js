@@ -27,7 +27,7 @@ document
       // logoImages[1].src = "assets/header/DudleyLogo-dark-mode.png";
       linkedin.src = "assets/profile/linkedin-dark-mode.png";
       github.src = "assets/profile/github-dark-mode.png";
-      hamburger.src = "assets/header/hamburger-icon-dark-mode.png";
+      hamburger.src = "./assets/header/Hamburger-icon-dark-mode.png";
       darklightimg.src = "assets/header/sun.png";
       githubproject.forEach((githubLogo) => {
         githubLogo.src = "./assets/projects/github-dark-mode.png";
@@ -37,7 +37,7 @@ document
       // logoImages[1].src = "assets/header/DudleyLogo-light-mode.png";
       linkedin.src = "assets/profile/linkedin-light-mode.png";
       github.src = "assets/profile/github-light-mode.png";
-      hamburger.src = "assets/header/hamburger-icon-light-mode.png";
+      hamburger.src = "assets/header/Hamburger-icon-light-mode.png";
       darklightimg.src = "assets/header/moon.png";
       githubproject.forEach((githubLogo) => {
         githubLogo.src = "./assets/projects/github-light-mode.png";
