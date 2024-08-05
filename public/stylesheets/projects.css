@@ -79,8 +79,3 @@
   font-size: 0.6rem;
   text-align: justify;
 }
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 12px 40px rgba(0, 0, 0, 0.4);
-}
