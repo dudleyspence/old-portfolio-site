@@ -57,11 +57,16 @@
 }
 
 /*  Computer Nav */
+
+#computer-nav {
+  display: none;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 15vh;
+  height: 10vh;
 }
 
 .nav-bar-links {
