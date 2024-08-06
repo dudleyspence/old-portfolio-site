@@ -65,30 +65,3 @@ section {
   height: 10vh;
   box-sizing: border-box;
 }
-
-.dark-light img {
-  height: 30px;
-  width: 30px;
-}
-
-#toggle-dark-light {
-  background: none !important;
-  border: none;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  padding: 5px 5px;
-  cursor: pointer;
-  z-index: 1000;
-}
-
-#home-button {
-  background: none !important;
-  border: none;
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-  padding: 5px 5px;
-  cursor: pointer;
-  z-index: 1000;
-}

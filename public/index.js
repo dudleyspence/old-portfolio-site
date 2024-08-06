@@ -1,11 +1,13 @@
+function menuClick() {
+  const menu = document.getElementById("hamburger-nav-links");
+  menu.classList.remove("open");
+}
+
 document
   .getElementById("hamburger-icon")
   .addEventListener("click", function () {
     const menu = document.getElementById("hamburger-nav-links");
-    const hamburgerIcon = document.getElementById("hamburger-icon");
     menu.classList.toggle("open");
-    hamburgerIcon.classList.toggle("open");
-    console.log("open");
   });
 
 document

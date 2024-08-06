@@ -72,6 +72,9 @@
   #experience-container {
     flex-direction: row;
   }
+  .experience-features {
+    font-size: calc(1vw + 1vh);
+  }
   .flip-card {
     height: 60vh;
   }
@@ -140,5 +143,13 @@
     width: 60px;
     height: 30px;
     font-size: 10px;
+  }
+}
+
+/* Narrow Mobile */
+@media only screen and (max-width: 350px) {
+  .experience-features li {
+    margin: calc(0.5vh + 0.5vw);
+    font-size: 0.6rem;
   }
 }
