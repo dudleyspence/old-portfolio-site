@@ -1,7 +1,7 @@
 #project-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: 80vh;
 }
 
@@ -24,7 +24,7 @@
 .card {
   border-radius: 25px;
   background-color: var(--text-color);
-  display: flex;
+  display: flex !important;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;

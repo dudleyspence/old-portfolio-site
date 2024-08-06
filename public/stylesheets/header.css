@@ -1,5 +1,6 @@
 .website-logo {
-  height: 10vh;
+  height: 7vh;
+  margin-left: 10px;
 }
 
 .website-logo:hover {
@@ -9,6 +10,7 @@
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0;
-  height: 10vh;
+  height: 15vh;
 }
