@@ -6,7 +6,7 @@ button {
 #profile {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding-top: 5vh;
   height: 75vh;

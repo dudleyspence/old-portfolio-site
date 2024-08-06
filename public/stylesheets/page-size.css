@@ -64,6 +64,7 @@
   #profile {
     flex-direction: row;
     gap: 2rem;
+    justify-content: center;
   }
   .profile-img-container {
     margin: 0;
