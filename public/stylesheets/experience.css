@@ -63,6 +63,7 @@
 }
 
 .flip-card-back li {
+  font-weight: 500;
   list-style-position: inside;
   font-size: 0.6rem;
 }
@@ -99,6 +100,7 @@
 .course-grade p,
 .experience-date p {
   margin: 0;
+  font-weight: 600;
   color: #f4f1de;
 }
 
