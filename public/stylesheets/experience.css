@@ -85,8 +85,8 @@
 }
 
 .experience-features li {
-  margin: calc(0.5vh + 0.5vw);
-  font-size: calc(0.8vh + 0.8vw);
+  margin: calc(0.8vh + 0.9vw);
+  font-size: calc(0.6vh + 0.6vw);
 }
 
 .course-grade,
