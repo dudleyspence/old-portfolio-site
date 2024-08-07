@@ -7,3 +7,13 @@ body {
   height: 100vh;
   gap: 40px;
 }
+
+.big-tick {
+  width: 10vw;
+  margin-bottom: 30px;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--primary-color);
+}

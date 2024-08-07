@@ -3,7 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Site</title>
+    <meta property="og:title" content="Dudley Spence - Software Engineer" />
+    <meta
+      property="og:description"
+      content="Check out my portfolio showcasing my projects and skills."
+    />
+    <meta
+      property="og:image"
+      content="https://www.dudleyspence.com/assets/profile/profile-img.png"
+    />
+    <meta property="og:url" content="https://www.dudleyspence.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Dudley Spence - Software Engineer</title>
     <link rel="stylesheet" href="./stylesheets/index.css" />
     <link rel="stylesheet" href="./stylesheets/header.css" />
     <link rel="stylesheet" href="./stylesheets/nav.css" />
@@ -310,6 +321,38 @@
                 </div>
                 <div class="card swiper-slide">
                   <div class="card-text">
+                    <h1 class="project-title">TrailTalk</h1>
+                    <p class="skills-used">JavaScript, React.js, HTML, CSS</p>
+                    <p>
+                      A Reddit-style social media/blog platform for hikers to
+                      connect and read related news. Built using React,
+                      JavaScript, HTML, React Router, and CSS for the frontend,
+                      this project integrates seamlessly with my be-news-api
+                      backend.
+                    </p>
+
+                    <div class="project-controls">
+                      <a href="https://github.com/dudleyspence">
+                        <img
+                          id="projectGithubIcon"
+                          class="icon"
+                          src="./assets/projects/github-light-mode.png"
+                          alt="the github logo"
+                        />
+                      </a>
+                      <a href="https://trailtalk-im36.onrender.com">
+                        <button class="styled-button">View Site</button>
+                      </a>
+                    </div>
+                  </div>
+                  <img
+                    class="card-image"
+                    src="./assets/projects/trailtalk.png"
+                    alt="screenshot of trailtalk"
+                  />
+                </div>
+                <div class="card swiper-slide">
+                  <div class="card-text">
                     <h1 class="project-title">be-news-api</h1>
                     <p class="skills-used">
                       JavaScript, Node.js, PSQL, express.js
@@ -339,36 +382,6 @@
                     class="card-image"
                     src="./assets/projects/api-image.jpeg"
                     alt="screenshot of be-news-api"
-                  />
-                </div>
-                <div class="card swiper-slide">
-                  <div class="card-text">
-                    <h1 class="project-title">TrailTalk</h1>
-                    <p class="skills-used">JavaScript, React.js, HTML, CSS</p>
-                    <p>
-                      A Reddit-style social media/blog platform for hikers to
-                      connect and read related news. Built using React,
-                      JavaScript, HTML, React Router, and CSS for the frontend,
-                      this project integrates seamlessly with my be-news-api
-                      backend.
-                    </p>
-
-                    <div class="project-controls">
-                      <a href="https://github.com/dudleyspence">
-                        <img
-                          id="projectGithubIcon"
-                          class="icon"
-                          src="./assets/projects/github-light-mode.png"
-                          alt="the github logo"
-                        />
-                      </a>
-                      <button class="styled-button">View Site</button>
-                    </div>
-                  </div>
-                  <img
-                    class="card-image"
-                    src="./assets/projects/trailtalk.png"
-                    alt="screenshot of trailtalk"
                   />
                 </div>
               </div>
