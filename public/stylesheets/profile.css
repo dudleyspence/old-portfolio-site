@@ -68,14 +68,6 @@ button {
   font-size: 0.6rem;
 }
 
-/* 
-
---background-color: #3d405b;
-  --text-color: #f4f1de;
-  --primary-color: #81b29a;
-
-*/
-
 .cv-button {
   background-color: #3d405b !important;
   border-color: var(--text-color) !important;

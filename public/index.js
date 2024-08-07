@@ -1,8 +1,4 @@
-function menuClick() {
-  const menu = document.getElementById("hamburger-nav-links");
-  menu.classList.remove("open");
-}
-
+// opens the hamburger menu
 document
   .getElementById("hamburger-icon")
   .addEventListener("click", function () {
@@ -10,6 +6,13 @@ document
     menu.classList.toggle("open");
   });
 
+// closes the menu when a nav link is pressed
+function menuClick() {
+  const menu = document.getElementById("hamburger-nav-links");
+  menu.classList.remove("open");
+}
+
+//changes the theme of the images for lots of the components
 document
   .getElementById("toggle-dark-light")
   .addEventListener("click", function () {
@@ -25,6 +28,7 @@ document
     const darklightimg = document.getElementById("toggle-dark-light-img");
 
     if (document.body.classList.contains("dark-mode")) {
+      localStorage.setItem("theme", "dark");
       logoImages[0].src = "assets/header/DudleyLogo-dark-mode.png";
       // logoImages[1].src = "assets/header/DudleyLogo-dark-mode.png";
       linkedin.src = "assets/profile/linkedin-dark-mode.png";
@@ -35,6 +39,7 @@ document
         githubLogo.src = "./assets/projects/github-dark-mode.png";
       });
     } else {
+      localStorage.setItem("theme", "light");
       logoImages[0].src = "assets/header/DudleyLogo-light-mode.png";
       // logoImages[1].src = "assets/header/DudleyLogo-light-mode.png";
       linkedin.src = "assets/profile/linkedin-light-mode.png";
@@ -47,22 +52,17 @@ document
     }
   });
 
-document.getElementById("toggle-dark-light").addEventListener("click", () => {
-  // Check local storage and apply the theme on page load
-  document.addEventListener("DOMContentLoaded", () => {
-    const theme = localStorage.getItem("theme");
-    if (theme === "dark") {
-      document.body.classList.add("dark-mode");
-    } else {
-      document.body.classList.remove("dark-mode");
-    }
-  });
-});
+//checks theme on page load and resets the contact form
+document.addEventListener("DOMContentLoaded", () => {
+  const theme = localStorage.getItem("theme");
+  if (theme === "dark") {
+    document.body.classList.add("dark-mode");
+  } else {
+    document.body.classList.remove("dark-mode");
+  }
 
-window.onload = function () {
-  // Reset the form fields when the page loads
   document.getElementById("contact-form").reset();
-};
+});
 
 function toggleFlip(card) {
   card.classList.toggle("flipped");

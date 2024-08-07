@@ -1,6 +1,6 @@
 const swiper = new Swiper(".slide-content", {
   slidesPerView: 1,
-  spaceBetween: 30, // Adjust space between slides
+  spaceBetween: 30,
   loop: true,
 
   centerSlide: true,
