@@ -1,14 +1,22 @@
-function menuClick() {
-  const menu = document.getElementById("hamburger-nav-links");
-  menu.classList.remove("open");
-}
-
+// opens the hamburger menu
 document
   .getElementById("hamburger-icon")
   .addEventListener("click", function () {
     const menu = document.getElementById("hamburger-nav-links");
     menu.classList.toggle("open");
   });
+
+document.getElementById("toggle-dark-light").addEventListener("click", () => {
+  // Check local storage and apply the theme on page load
+  document.addEventListener("DOMContentLoaded", () => {
+    const theme = localStorage.getItem("theme");
+    if (theme === "dark") {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
+  });
+});
 
 document.getElementById("toggle-dark-light").addEventListener("click", () => {
   // Check local storage and apply the theme on page load
@@ -60,7 +68,7 @@ document
 window.onload = function () {
   // Reset the form fields when the page loads
   document.getElementById("contact-form").reset();
-};
+});
 
 function toggleFlip(card) {
   card.classList.toggle("flipped");
