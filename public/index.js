@@ -68,7 +68,7 @@ document
 window.onload = function () {
   // Reset the form fields when the page loads
   document.getElementById("contact-form").reset();
-});
+};
 
 function toggleFlip(card) {
   card.classList.toggle("flipped");

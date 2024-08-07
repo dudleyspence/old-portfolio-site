@@ -128,7 +128,7 @@
   .profile-img-container {
     scale: 1.3;
   }
-  #profile img {
+  profile-img {
     width: 100%;
   }
   .website-logo {
