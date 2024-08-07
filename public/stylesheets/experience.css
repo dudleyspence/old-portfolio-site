@@ -10,10 +10,10 @@
 
 .flip-card {
   background-color: transparent;
-  width: 70vw; /* Adjusted to match your card width */
+  width: 70vw;
   height: 35vh;
   perspective: 1000px;
-  margin: 1rem; /* Add margin to center the card */
+  margin: 1rem;
 }
 
 .flip-card-inner {

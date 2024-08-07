@@ -30,7 +30,6 @@ body {
   font-style: light;
 }
 
-/* when we click links to nav will scroll down in smooth movement */
 html {
   scroll-behavior: smooth;
 }
