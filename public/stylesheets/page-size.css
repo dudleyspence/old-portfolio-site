@@ -200,9 +200,3 @@
     font-size: 0.6rem;
   }
 }
-
-@media only screen and (max-width: 250px) {
-  .card-image {
-    scale: 0.6;
-  }
-}
