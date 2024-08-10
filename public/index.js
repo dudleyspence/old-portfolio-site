@@ -1,3 +1,8 @@
+function menuClick() {
+  const menu = document.getElementById("hamburger-nav-links");
+  menu.classList.remove("open");
+}
+
 // opens the hamburger menu
 document
   .getElementById("hamburger-icon")
