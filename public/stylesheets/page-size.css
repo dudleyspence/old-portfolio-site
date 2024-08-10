@@ -138,6 +138,10 @@
     scale: 0;
   }
 
+  .contact-form-container h3 {
+    scale: 0.5;
+  }
+
   .profile-text-1,
   .profile-text-2 {
     margin-bottom: 0px;
