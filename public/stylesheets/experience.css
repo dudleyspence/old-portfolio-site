@@ -92,7 +92,7 @@
 .course-grade,
 .experience-date {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   gap: 0.4rem;
   width: 100%;
