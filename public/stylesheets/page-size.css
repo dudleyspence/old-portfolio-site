@@ -108,7 +108,7 @@
 }
 
 /* Unusually small screen */
-@media only screen and (max-height: 300px) {
+@media only screen and (max-height: 250px) {
   .experience-features li {
     margin: calc(0.5vh + 0.5vw);
     font-size: 0.35rem;
@@ -228,8 +228,4 @@
     margin: calc(0.5vh + 0.5vw);
     font-size: 0.6rem;
   }
-}
-
-/* Narrow Mobile */
-@media only screen and (max-height: 300px) {
 }
