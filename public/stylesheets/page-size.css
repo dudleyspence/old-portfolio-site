@@ -182,6 +182,11 @@
     width: 70px;
   }
 
+  .skill-card p {
+    font-size: 1.2rem !important;
+    font-weight: 500 !important;
+    margin-top: 30px !important;
+  }
   .card {
     display: flex !important;
     flex-direction: column;
