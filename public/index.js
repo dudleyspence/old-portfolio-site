@@ -78,3 +78,18 @@ window.onload = function () {
 function toggleFlip(card) {
   card.classList.toggle("flipped");
 }
+
+function displayIconName(id) {
+  // first need to hide all icon names
+
+  const iconNames = document.querySelectorAll(".icon-name");
+
+  iconNames.forEach((icon) => {
+    icon.style.display = "none";
+  });
+
+  // unhide the icon name that is clicked
+
+  const selectedIcon = document.getElementById(id);
+  selectedIcon.style.display = "block";
+}

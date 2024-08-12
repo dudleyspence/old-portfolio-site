@@ -3,36 +3,46 @@
 #about-container {
   display: flex;
   flex-direction: column;
-  gap: 10vh;
+  gap: 20px;
   height: 80vh !important;
   align-items: center;
+  justify-content: flex-start;
+}
+
+#about-container p {
+  font-size: 0.5rem;
+  font-weight: 300;
 }
 
 .skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-  width: 70vw;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr); /* 5 columns */
+  grid-template-rows: repeat(5, auto); /* 3 rows */
+  gap: 20px; /* Spacing between items */
+  width: 100%;
+  margin: 0 auto; /* Center the grid */
+}
+
+.skill-card img:hover {
+  transform: scale(1.1);
+}
+
+.skills-container img {
+  width: 80%;
+  aspect-ratio: 1/1;
+  margin-bottom: 10px;
+  min-width: 40px;
 }
 
 .skill-card {
   display: flex;
-  flex: 1 1 calc(20% - 20px); /* 5 icons per row with gaps */
-  justify-content: center;
   align-items: center;
-  max-width: calc(20% - 10px);
+  flex-direction: column;
+  width: 40px;
+  height: 60px;
 }
 
-.skill-card img {
-  max-width: 65px;
-  max-width: 65px;
-  height: 100%;
-  width: 100%;
-  transition: box-shadow 0.3s, transform 0.3s;
-}
-
-.skill-card img:hover {
-  scale: 1.03;
-  transform: translateY(-3px);
+.icon-name {
+  display: none;
 }
