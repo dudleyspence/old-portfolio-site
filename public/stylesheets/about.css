@@ -46,3 +46,7 @@
 .icon-name {
   display: none;
 }
+
+.icon-name.selectedIcon {
+  display: block;
+}

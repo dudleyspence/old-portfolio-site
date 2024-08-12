@@ -80,16 +80,20 @@ function toggleFlip(card) {
 }
 
 function displayIconName(id) {
-  // first need to hide all icon names
-
-  const iconNames = document.querySelectorAll(".icon-name");
-
-  iconNames.forEach((icon) => {
-    icon.style.display = "none";
-  });
-
-  // unhide the icon name that is clicked
-
   const selectedIcon = document.getElementById(id);
-  selectedIcon.style.display = "block";
+
+  // Check selected icon name is already visible
+  if (selectedIcon.classList.contains("selectedIcon")) {
+    // If visible, hide it by removing the 'selectedIcon' class
+    selectedIcon.classList.remove("selectedIcon");
+  } else {
+    // If not visible, hide all other icon names
+    const iconNames = document.querySelectorAll(".icon-name");
+    iconNames.forEach((icon) => {
+      icon.classList.remove("selectedIcon");
+    });
+
+    // show selected icon name
+    selectedIcon.classList.add("selectedIcon");
+  }
 }
