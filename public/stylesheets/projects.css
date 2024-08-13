@@ -38,12 +38,13 @@
 }
 
 .card-image {
-  margin-top: 20px;
+  margin-top: 5px;
   min-height: 80px;
   min-width: 80px;
-  width: 75%;
+  height: 100%;
   max-width: 350px;
   max-height: 350px;
+  aspect-ratio: 1/1 !important;
 }
 
 .swiper-pagination-bullet {
@@ -78,4 +79,9 @@
   font-size: 0.6rem;
   font-weight: 400;
   text-align: justify;
+}
+
+#trailTalkImg {
+  aspect-ratio: 1.25/1 !important;
+  max-width: 500px;
 }
