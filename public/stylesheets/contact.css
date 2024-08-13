@@ -56,7 +56,7 @@
 textarea {
   height: 90px !important;
   padding-top: 10px;
-  width: 100%;
+  width: 100% !important;
 }
 
 #contact-submit {
@@ -66,4 +66,13 @@ textarea {
 
 #contact-submit:hover {
   background-color: #e0dacc;
+}
+
+.messageAndSubmit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
 }
