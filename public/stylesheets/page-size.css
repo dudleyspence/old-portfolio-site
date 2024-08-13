@@ -245,11 +245,8 @@
   }
 }
 
-@media only screen and (min-width: 743px) and (max-width: 1024px) {
-  .card img {
-    width: 100%;
-  }
-  .card-text {
-    width: 30%;
+@media only screen and (orientation: landscape) and (max-height: 550px) {
+  .card-image {
+    scale: 0.6;
   }
 }
