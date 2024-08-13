@@ -45,6 +45,7 @@
 
 .icon-name {
   display: none;
+  margin-top: 10px;
 }
 
 .icon-name.selectedIcon {
