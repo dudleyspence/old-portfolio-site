@@ -23,18 +23,6 @@ document.getElementById("toggle-dark-light").addEventListener("click", () => {
   });
 });
 
-document.getElementById("toggle-dark-light").addEventListener("click", () => {
-  // Check local storage and apply the theme on page load
-  document.addEventListener("DOMContentLoaded", () => {
-    const theme = localStorage.getItem("theme");
-    if (theme === "dark") {
-      document.body.classList.add("dark-mode");
-    } else {
-      document.body.classList.remove("dark-mode");
-    }
-  });
-});
-
 document
   .getElementById("toggle-dark-light")
   .addEventListener("click", function () {
