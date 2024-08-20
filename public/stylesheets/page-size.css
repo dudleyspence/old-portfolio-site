@@ -187,6 +187,53 @@
   }
 }
 
+/* Short Display */
+@media only screen and (orientation: portrait) and (max-height: 700px) {
+  .card-image {
+    height: 40%;
+    width: auto;
+  }
+  .contact-form {
+    padding-top: 15px;
+    gap: 8px;
+  }
+  .contact-form-container h3 {
+    display: none;
+  }
+
+  .experience-features li {
+    margin: calc(0.5vh + 0.5vw);
+    font-size: 0.4rem;
+  }
+
+  .skills-container {
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    grid-template-rows: repeat(3, auto); /* 3 rows */
+    gap: 0px;
+    height: 50%;
+    margin-top: 0px;
+  }
+  .skills-container img {
+    margin-bottom: 1px;
+  }
+  p,
+  h1,
+  h3 {
+    font-size: 0.5rem !important;
+  }
+  .profile-text-1,
+  .profile-text-2,
+  .contact-button,
+  .cv-button,
+  .profile-img-container,
+  img,
+  .experience-location,
+  .experience-name {
+    scale: 0.8;
+  }
+}
+
 @media only screen and (max-height: 350px) {
   .skill-card {
     height: 40px;
