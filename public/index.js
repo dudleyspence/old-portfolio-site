@@ -31,7 +31,11 @@ document
 
     const logoImages = document.getElementById("website-logo");
     const linkedin = document.getElementById("linkedinIcon");
+    const linkedinFooter = document.getElementById("linkedinIconFooter");
     const github = document.getElementById("githubIcon");
+    const githubFooter = document.getElementById("githubIconFooter");
+    const instagram = document.getElementById("instagramIcon");
+    const email = document.getElementById("emailIcon");
     const githubproject = document.querySelectorAll("#projectGithubIcon");
     const hamburger = document.getElementById("hamburger-icon-img");
 
@@ -40,7 +44,11 @@ document
     if (document.body.classList.contains("dark-mode")) {
       logoImages.src = "assets/header/DudleyLogo-dark-mode.png";
       linkedin.src = "assets/profile/linkedin-dark-mode.png";
+      linkedinFooter.src = "assets/profile/linkedin-dark-mode.png";
       github.src = "assets/profile/github-dark-mode.png";
+      githubFooter.src = "assets/profile/github-dark-mode.png";
+      instagram.src = "assets/footer/instagram-dark-mode.png";
+      email.src = "assets/footer/email-dark-mode.png";
       hamburger.src = "./assets/header/Hamburger-icon-dark-mode.png";
       darklightimg.src = "assets/header/sun.png";
       githubproject.forEach((githubLogo) => {
@@ -49,7 +57,11 @@ document
     } else {
       logoImages.src = "assets/header/DudleyLogo-light-mode.png";
       linkedin.src = "assets/profile/linkedin-light-mode.png";
+      linkedinFooter.src = "assets/profile/linkedin-light-mode.png";
       github.src = "assets/profile/github-light-mode.png";
+      githubFooter.src = "assets/profile/github-light-mode.png";
+      instagram.src = "assets/footer/instagram-light-mode.png";
+      email.src = "assets/footer/email-light-mode.png";
       hamburger.src = "assets/header/Hamburger-icon-light-mode.png";
       darklightimg.src = "assets/header/moon.png";
       githubproject.forEach((githubLogo) => {
