@@ -1,8 +1,14 @@
+#projects {
+  height: 100vh;
+  box-sizing: border-box;
+}
+
 #project-container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   height: 80vh;
+  box-sizing: border-box;
 }
 
 .slide-container {
@@ -48,7 +54,7 @@
 
 .swiper-pagination-bullet {
   background-color: var(--text-color) !important;
-  opacity: 1;
+  opacity: 3;
 }
 
 .swiper-pagination-bullet-active {

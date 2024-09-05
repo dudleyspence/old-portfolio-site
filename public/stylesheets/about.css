@@ -17,8 +17,8 @@
 .skills-container {
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(3, 1fr); /* 5 columns */
-  grid-template-rows: repeat(5, auto); /* 3 rows */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
   gap: 20px; /* Spacing between items */
   width: 100%;
   margin: 0 auto; /* Center the grid */
