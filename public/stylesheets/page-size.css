@@ -39,6 +39,10 @@
   .card-image {
     scale: 1;
   }
+  .card-image {
+    height: 100%;
+    width: 50%;
+  }
 
   .experience {
     gap: 0.3rem !important;
@@ -173,9 +177,14 @@
     flex-direction: column !important;
     gap: 0.2rem;
   }
+  .card-text {
+    width: 100%;
+    height: 50%;
+  }
 
   .card-image {
-    scale: 0.8;
+    width: auto;
+    height: 50%;
   }
 }
 
@@ -189,10 +198,10 @@
 
 /* Short Display */
 @media only screen and (orientation: portrait) and (max-height: 700px) {
-  .card-image {
-    height: 40%;
-    width: auto;
-  }
+  /* .card-image {
+      height: 40%;
+      width: auto;
+    } */
   .contact-form {
     padding-top: 15px;
     gap: 8px;
@@ -243,6 +252,10 @@
   }
   .contact-form {
     padding-top: 15px !important;
+  }
+  .card-image {
+    height: 100% !important;
+    width: auto !;
   }
 }
 
@@ -316,7 +329,18 @@
   .card {
     display: flex !important;
     flex-direction: row;
+    justify-content: center !important;
+    align-items: center !important;
     gap: 0.2rem;
+  }
+  .card-image {
+    width: 50%;
+    height: auto;
+    max-height: none;
+  }
+  .card-text {
+    width: 50%;
+    height: 100%;
   }
 }
 
@@ -324,11 +348,18 @@
   .card {
     display: flex !important;
     flex-direction: row;
+    justify-content: center !important;
+    align-items: center !important;
     gap: 0.2rem;
   }
   .card-image {
+    width: 50%;
+    height: auto;
+    max-height: none;
+  }
+  .card-text {
+    width: 50%;
     height: 100%;
-    width: auto;
   }
 }
 
@@ -350,5 +381,16 @@
   .skill-card p {
     font-size: 0.8rem !important;
     margin-top: 3px !important;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1024px) {
+  .card-text {
+    height: 50%;
+    width: 100%;
+  }
+  .card-image {
+    height: 40% !important;
+    width: auto;
   }
 }
