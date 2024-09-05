@@ -174,9 +174,9 @@
     gap: 0.2rem;
   }
 
-  .card-image {
+  /* .card-image {
     scale: 0.8;
-  }
+  } */
 }
 
 /* Narrow Mobile */
@@ -189,10 +189,10 @@
 
 /* Short Display */
 @media only screen and (orientation: portrait) and (max-height: 700px) {
-  .card-image {
-    height: 40%;
-    width: auto;
-  }
+  /* .card-image {
+      height: 40%;
+      width: auto;
+    } */
   .contact-form {
     padding-top: 15px;
     gap: 8px;
@@ -326,10 +326,10 @@
     flex-direction: row;
     gap: 0.2rem;
   }
-  .card-image {
+  /* .card-image {
     height: 100%;
     width: auto;
-  }
+  } */
 }
 
 @media only screen and (orientation: landscape) and (max-height: 700px) {
