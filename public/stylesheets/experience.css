@@ -81,13 +81,13 @@
 }
 
 .calender-icon {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
 }
 
 .grade-icon {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 .experience-features li {
@@ -107,6 +107,7 @@
 .course-grade p,
 .experience-date p {
   margin: 0;
+  font-size: 12px !important;
   font-weight: 600;
   color: #f4f1de;
 }
@@ -115,4 +116,9 @@
 h3 {
   color: #f4f1de;
   margin: 0;
+  font-size: 18px !important;
+}
+
+.experience-location {
+  font-size: 16px !important;
 }

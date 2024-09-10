@@ -87,7 +87,7 @@
 }
 
 .card p {
-  color: white;
+  color: var(--projects-text);
   font-size: 0.6rem;
   font-weight: 600;
   text-align: left;
