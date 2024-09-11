@@ -25,7 +25,7 @@
 }
 
 .skill-card img:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 .skills-container img {
@@ -33,6 +33,7 @@
   aspect-ratio: 1/1;
   margin-bottom: 10px;
   min-width: 40px;
+  transition: 0.2s ease;
 }
 
 .skill-card {
