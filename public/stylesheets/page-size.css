@@ -344,6 +344,19 @@
   }
 }
 
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+  .card-text {
+    width: 50%;
+    height: 100% !important;
+  }
+  .peaceOfMind-text p {
+    font-size: 7px;
+  }
+  .skills-used {
+    font-size: 8px !important;
+  }
+}
+
 @media only screen and (orientation: landscape) {
   .card {
     display: flex !important;
@@ -353,13 +366,16 @@
     gap: 0.2rem;
   }
   .card-image {
-    width: 50%;
-    height: auto;
+    width: 50% !important;
+    height: auto !important;
     max-height: none;
+  }
+  .nImage {
+    height: 100% !important;
   }
   .card-text {
     width: 50%;
-    height: 100%;
+    height: auto;
   }
 }
 
