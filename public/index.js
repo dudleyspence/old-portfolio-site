@@ -35,6 +35,7 @@ document
     const github = document.getElementById("githubIcon");
     const githubFooter = document.getElementById("githubIconFooter");
     const instagram = document.getElementById("instagramIcon");
+    const emailInFooter = document.getElementById("emailIconFooter");
     const email = document.getElementById("emailIcon");
     const githubproject = document.querySelectorAll("#projectGithubIcon");
     const hamburger = document.getElementById("hamburger-icon-img");
@@ -48,7 +49,8 @@ document
       github.src = "assets/profile/github-dark-mode.png";
       githubFooter.src = "assets/profile/github-dark-mode.png";
       instagram.src = "assets/footer/instagram-dark-mode.png";
-      email.src = "assets/footer/email-dark-mode.png";
+      emailInFooter.src = "assets/footer/email-dark-mode.png";
+      email.src = "assets/profile/email-dark-mode.png";
       hamburger.src = "./assets/header/Hamburger-icon-dark-mode.png";
       darklightimg.src = "assets/header/sun.png";
       githubproject.forEach((githubLogo) => {
@@ -61,7 +63,8 @@ document
       github.src = "assets/profile/github-light-mode.png";
       githubFooter.src = "assets/profile/github-light-mode.png";
       instagram.src = "assets/footer/instagram-light-mode.png";
-      email.src = "assets/footer/email-light-mode.png";
+      emailInFooter.src = "assets/footer/email-light-mode.png";
+      email.src = "assets/profile/email-light-mode.png";
       hamburger.src = "assets/header/Hamburger-icon-light-mode.png";
       darklightimg.src = "assets/header/moon.png";
       githubproject.forEach((githubLogo) => {
