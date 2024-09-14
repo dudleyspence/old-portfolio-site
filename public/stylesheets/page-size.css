@@ -93,9 +93,9 @@
 /* Wide Screens */
 @media only screen and (min-width: 813px) {
   #profile {
-    flex-direction: row;
+    flex-direction: row-reverse;
     gap: 2rem;
-    justify-content: center;
+    justify-content: space-evenly;
   }
   .profile-img-container {
     margin: 0;
