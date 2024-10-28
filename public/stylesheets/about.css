@@ -3,14 +3,14 @@
 #about-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  height: 80vh !important;
+  gap: 50px;
+  height: 85vh !important;
   align-items: center;
   justify-content: flex-start;
 }
 
 #about-container p {
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   font-weight: 300;
 }
 
@@ -53,4 +53,8 @@
 
 .icon-name.selectedIcon {
   display: block;
+}
+
+#aboutTitle {
+  height: 5vh;
 }
