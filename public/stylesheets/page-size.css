@@ -65,22 +65,12 @@
 
   .skills-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    height: inherit;
-    align-items: center;
-    padding-bottom: 35px;
-    box-sizing: border-box;
-    gap: 1.6rem;
   }
 
   p {
     font-size: 0.5rem !important;
   }
-  .skill-card {
-    flex: none;
-    width: 35px;
-  }
+
   #about-container {
     gap: 4vh;
   }
@@ -128,26 +118,8 @@
 
 /* Bigger screen = bigger title and buttons */
 @media only screen and (min-width: 1024px) {
-  #about-container p {
-    font-size: 1rem;
-  }
-
-  .skills-container {
-    align-items: center;
-    grid-template-columns: repeat(5, 1fr); /* 5 columns */
-    grid-template-rows: repeat(3, auto); /* 3 rows */
-    gap: 30px;
-    height: 50%;
-    margin-top: 5vh;
-  }
-
   .skill-card {
     width: 70px;
-  }
-
-  .skill-card p {
-    font-size: 1.2rem !important;
-    font-weight: 500 !important;
   }
 
   .profile-img-container {
@@ -215,14 +187,6 @@
     font-size: 0.4rem;
   }
 
-  .skills-container {
-    align-items: center;
-    grid-template-columns: repeat(5, 1fr); /* 5 columns */
-    grid-template-rows: repeat(3, auto); /* 3 rows */
-    gap: 0px;
-    height: 50%;
-    margin-top: 0px;
-  }
   .skills-container img {
     margin-bottom: 1px;
   }
@@ -377,26 +341,16 @@
     width: 50%;
     height: auto;
   }
+  .skills-container {
+    flex-direction: row;
+    height: auto;
+  }
 }
 
 @media only screen and (orientation: landscape) and (max-height: 700px) {
-  .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    height: inherit;
-    align-items: center;
-    padding-bottom: 35px;
-    box-sizing: border-box;
-    gap: 1.6rem;
-  }
   .skill-card {
     flex: none;
     width: 35px;
-  }
-  .skill-card p {
-    font-size: 0.8rem !important;
-    margin-top: 3px !important;
   }
 }
 
