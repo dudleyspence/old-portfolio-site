@@ -6,7 +6,7 @@ button {
 #profile {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   padding-bottom: 10vh !important;
   padding-top: 0vh !important;
@@ -16,8 +16,8 @@ button {
 
 .profile-img-container {
   display: flex;
-  height: 280px;
-  width: 280px;
+  height: 250px;
+  width: 250px;
   margin: 0 auto 0;
 }
 
