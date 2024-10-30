@@ -1,12 +1,13 @@
 .styled-button {
-  width: 40px;
-  height: 20px;
+  width: 60px;
+  height: 25px;
 
   background-color: #81b29a;
-  color: #f4f1de;
+  color: white;
   border: none;
   border-radius: 5px;
-  font-size: 7px;
+  text-wrap: nowrap;
+  font-size: 9px;
   font-weight: bold;
   text-align: center;
 
