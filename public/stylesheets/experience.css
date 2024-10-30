@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  color: white !important;
   margin-bottom: 5vh;
 }
 
@@ -56,12 +55,11 @@
 
 .flip-card-back {
   background-color: var(--text-color);
-  color: white !important;
+  color: var(--projects-text);
   transform: rotateY(180deg);
   box-sizing: border-box;
   padding: 30px;
   text-align: left;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +70,7 @@
   font-weight: 500;
   list-style-position: inside;
   font-size: 0.6rem;
-  color: white !important;
+  color: var(--projects-text);
 }
 
 .experience {
@@ -94,7 +92,6 @@
 .experience-features li {
   margin: calc(0.8vh + 0.9vw);
   font-size: calc(0.6vh + 0.6vw);
-  color: white !important;
 }
 
 .course-grade,
