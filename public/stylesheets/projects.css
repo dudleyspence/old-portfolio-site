@@ -3,12 +3,55 @@
   box-sizing: border-box;
 }
 
-#project-container {
+#projects .section-title {
+  height: 5vh;
+}
+
+.ac {
+  background-color: var(--text-color) !important;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.ac-trigger {
+  color: var(--projects-text) !important;
+}
+
+.ac-panel {
+  padding: 0px 10px;
+  display: flex !important;
+  flex-direction: column;
+}
+
+.skills-used {
+  color: rgb(247, 148, 121) !important;
+  font-weight: 800 !important;
+  word-spacing: 2px;
+  font-size: 12px !important;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-detail {
+  color: var(--projects-text) !important;
+}
+
+.project-controls {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  height: 80vh;
-  box-sizing: border-box;
+  text-align: center;
+  gap: 2rem;
+}
+
+.project-controls p {
+  color: var(--projects-text) !important;
+  margin: 0;
+}
+
+.frontend-backend {
+  color: var(--projects-text);
 }
 
 .slide-container {
@@ -78,12 +121,6 @@
   word-spacing: 2px;
   font-size: 12px !important;
   margin-bottom: 0.5rem;
-}
-
-.project-controls {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
 }
 
 .card p {

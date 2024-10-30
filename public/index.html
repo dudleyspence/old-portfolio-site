@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="./stylesheets/button.css" />
     <link rel="stylesheet" href="./stylesheets/page-size.css" />
     <link rel="stylesheet" href="./stylesheets/footer.css" />
+    <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -36,6 +37,8 @@
       defer
     ></script>
     <script src="./swiper.js" defer></script>
+    <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js" defer></script>
+
   </head>
   <body id="home">
     <header>
@@ -442,205 +445,179 @@
       </section>
       <section id="projects">
         <h1 class="section-title">Projects</h1>
-        <p class="swipeInstruction">Swipe to view projects</p>
-        <div class="section-container" id="project-container">
-          <div class="slide-container swiper">
-            <div class="slide-content">
-              <div class="card-wrapper swiper-wrapper">
-                <div class="card swiper-slide">
-                  <div class="card-text">
-                    <h1 class="project-title">TrailTalk (Full-stack)</h1>
-                    <p class="skills-used">
-                      Frontend: JavaScript, React.js, HTML, CSS
-                    </p>
-                    <p class="skills-used">
-                      Backend: Node.js, PSQL, express.js
-                    </p>
-                    <p>
-                      A Reddit-style social media and blog platform designed for
-                      hikers to connect and stay informed with related news.
-                      Users can upload, view, and comment on articles. The
-                      platform features voting for both articles and comments,
-                      and articles can be sorted by topic or organized by date,
-                      votes, and comment count.
-                    </p>
+        <div class="js-accordion">
+          <div class="ac" id="trailtalk">
+              <h2 class="ac-header">
+                  <button type="button" class="ac-trigger">TrailTalk (Full-stack)</button>
+              </h2>
+              <div class="ac-panel">
+                <p class="skills-used">
+                  <span class="frontend-backend">Frontend: </span>JavaScript, React.js, HTML, CSS
+                </p>
+                <p class="skills-used">
+                  <span class="frontend-backend">Backend: </span>Node.js, PSQL, express.js
+                </p>
+                <p class="project-detail" >
+                  A Reddit-style social media and blog platform designed for
+                  hikers to connect and stay informed with related news.
+                  Users can upload, view, and comment on articles. The
+                  platform features voting for both articles and comments,
+                  and articles can be sorted by topic or organized by date,
+                  votes, and comment count.
+                </p>
+                <div class="project-controls">
+                  <a href="https://github.com/dudleyspence/TrailTalk">
+                    <img
+                      id="projectGithubIcon"
+                      class="icon"
+                      src="./assets/projects/github-light-mode.png"
+                      alt="the github logo"
+                    />
+                    <p>Front-end</p>
+                  </a>
+                  <a href="https://github.com/dudleyspence/be-news-api">
+                    <img
+                      id="projectGithubIcon"
+                      class="icon"
+                      src="./assets/projects/github-light-mode.png"
+                      alt="the github logo"
+                    />
+                    <p>Back-end</p>
+                  </a>
 
-                    <div class="project-controls">
-                      <a href="https://github.com/dudleyspence/TrailTalk">
-                        <img
-                          id="projectGithubIcon"
-                          class="icon"
-                          src="./assets/projects/github-light-mode.png"
-                          alt="the github logo"
-                        />
-                        <p>Front-end</p>
-                      </a>
-                      <a href="https://github.com/dudleyspence/be-news-api">
-                        <img
-                          id="projectGithubIcon"
-                          class="icon"
-                          src="./assets/projects/github-light-mode.png"
-                          alt="the github logo"
-                        />
-                        <p>Back-end</p>
-                      </a>
-
-                      <a href="https://trailtalk-production.up.railway.app">
-                        <button class="styled-button">View Site</button>
-                      </a>
-                    </div>
-                  </div>
-                  <img
-                    class="card-image"
-                    id="trailTalkImg"
-                    src="./assets/projects/trailtalk.png"
-                    alt="screenshot of trailtalk"
-                  />
-                </div>
-                <div class="card swiper-slide">
-                  <div class="card-text">
-                    <h1 class="project-title">TravelSync (Full-stack)</h1>
-                    <p class="skills-used">
-                      Frontend: React.js, HTML, CSS, Mapbox
-                    </p>
-                    <p class="skills-used">
-                      Backend: Python, fastAPI, MySql, SQLAlchemy, FirebaseAuth,
-                      GooglePlaces API
-                    </p>
-                    <p>
-                      A web app that makes collaborative planning of group
-                      itineraries easy. With features like map-based location
-                      searches, an interactive itinerary list, document storage,
-                      and location details.
-                    </p>
-
-                    <div class="project-controls">
-                      <a
-                        href="https://github.com/dudleyspence/TravelSync-FE-Extended"
-                      >
-                        <img
-                          id="projectGithubIcon"
-                          class="icon"
-                          src="./assets/projects/github-light-mode.png"
-                          alt="the github logo"
-                        />
-                        <p>Front-end</p>
-                      </a>
-                      <a
-                        href="https://github.com/dudleyspence/TravelSyncAPI-Extended"
-                      >
-                        <img
-                          id="projectGithubIcon"
-                          class="icon"
-                          src="./assets/projects/github-light-mode.png"
-                          alt="the github logo"
-                        />
-                        <p>Back-end</p>
-                      </a>
-                      <a
-                        href="https://travelsync-fe-extended-production.up.railway.app"
-                      >
-                        <button class="styled-button">View Site</button>
-                      </a>
-                    </div>
-                  </div>
-                  <img
-                    class="card-image"
-                    src="./assets/projects/TravelSync.png"
-                    alt="TravelSync img"
-                  />
-                </div>
-                <div class="card swiper-slide" id="peaceOfMind-card">
-                  <div class="card-text peaceOfMind-text">
-                    <h1 class="project-title">Peace Of Mind (Full-Stack)</h1>
-                    <p class="skills-used">
-                      Frontend: JavaScript, React, Redux, tailwind
-                    </p>
-                    <p class="skills-used">
-                      Backend: Node.js, express.js, MongoDB
-                    </p>
-                    <p>
-                      Peace of Mind connects families of geriatric patients with
-                      their carers, offering a shared space for scheduling tasks
-                      like medication, hygiene, meals, and medical appointments.
-                    </p>
-                    <p>
-                      Carers log task completions and leave notes on activities
-                      giving families insight into their loved one's well-being.
-                    </p>
-                  </div>
-                  <div class="project-controls">
-                    <a href="https://github.com/dudleyspence/PeaceOfMind-FE">
-                      <img
-                        id="projectGithubIcon"
-                        class="icon"
-                        src="./assets/projects/github-light-mode.png"
-                        alt="the github logo"
-                      />
-                      <p>Front-end</p>
-                    </a>
-                    <a href="https://github.com/dudleyspence/PeaceOfMind-API">
-                      <img
-                        id="projectGithubIcon"
-                        class="icon"
-                        src="./assets/projects/github-light-mode.png"
-                        alt="the github logo"
-                      />
-                      <p>Back-end</p>
-                    </a>
-                    <a href="https://peaceofmind-fe-production.up.railway.app">
-                      <button class="styled-button">View Site</button>
-                    </a>
-                  </div>
-                  <img
-                    class="card-image peaceOfMind-image"
-                    id="peaceOfMind"
-                    src="./assets/projects/PeaceOfMind.png"
-                    alt="temporary development image"
-                  />
-                </div>
-                <div class="card swiper-slide">
-                  <div class="card-text">
-                    <h1 class="project-title">
-                      Solving the N-puzzle using Deep Reinforcement Learning
-                    </h1>
-                    <p class="skills-used">Python, tensorflow, numpy</p>
-                    <p>
-                      My MSc Computer Science dissertation used python and
-                      tensorflow to create a deep reinforcement learning model
-                      that learns to solve the N-puzzle.
-                    </p>
-                    <div class="project-controls">
-                      <a href="https://github.com/dudleyspence/N-Puzzle-DQN">
-                        <img
-                          id="projectGithubIcon"
-                          class="icon"
-                          src="./assets/projects/github-light-mode.png"
-                          alt="the github logo"
-                        />
-                        <p>Code</p>
-                      </a>
-                      <a
-                        href="./assets/projects/Solving the N-Puzzle using Deep Reinforcement Learning.pdf"
-                        download
-                      >
-                        <button class="styled-button">Download</button>
-                      </a>
-                    </div>
-                  </div>
-                  <img
-                    class="card-image nImage"
-                    src="./assets/projects/n-puzzle.png"
-                    alt="n-puzzle image"
-                  />
+                  <a href="https://trailtalk-production.up.railway.app">
+                    <button class="styled-button">View Site</button>
+                  </a>
                 </div>
               </div>
-            </div>
+          </div>
+          <div class="ac" id="travelsync">
+            <h2 class="ac-header">
+                <button type="button" class="ac-trigger">TravelSync (Full-stack)</button>
+            </h2>
+            <div class="ac-panel">
+              <p class="skills-used">
+                <span class="frontend-backend">Frontend: </span>React.js, HTML, CSS, Mapbox
+              </p>
+              <p class="skills-used">
+                <span class="frontend-backend">Backend: </span>Python, fastAPI, MySql, SQLAlchemy, FirebaseAuth,
+                GooglePlaces API
+              </p>
+              <p class="project-detail" >
+                A web app that makes collaborative planning of group
+                itineraries easy. With features like map-based location
+                searches, an interactive itinerary list, document storage,
+                and location details.
+              </p>
+              <div class="project-controls">
+                <a href="https://github.com/dudleyspence/TravelSync-FE-Extended">
+                  <img
+                    id="projectGithubIcon"
+                    class="icon"
+                    src="./assets/projects/github-light-mode.png"
+                    alt="the github logo"
+                  />
+                  <p>Front-end</p>
+                </a>
+                <a href="https://github.com/dudleyspence/TravelSyncAPI-Extended">
+                  <img
+                    id="projectGithubIcon"
+                    class="icon"
+                    src="./assets/projects/github-light-mode.png"
+                    alt="the github logo"
+                  />
+                  <p>Back-end</p>
+                </a>
 
-            <div class="swiper-pagination">Swipe to see projects</div>
+                <a href="https://travelsync-fe-extended-production.up.railway.app">
+                  <button class="styled-button">View Site</button>
+                </a>
+              </div>
+            </div>
+        </div>
+        <div class="ac" id="PeaceOfMind">
+          <h2 class="ac-header">
+              <button type="button" class="ac-trigger">Peace of Mind (Full-stack)</button>
+          </h2>
+          <div class="ac-panel">
+            <p class="skills-used">
+              <span class="frontend-backend">Frontend: </span>JavaScript, React, Redux, tailwind
+            </p>
+            <p class="skills-used">
+              <span class="frontend-backend">Backend: </span> Node.js, express.js, MongoDB
+            </p>
+            <p class="project-detail" >
+              Peace of Mind connects families of geriatric patients with
+              their carers, offering a shared space for scheduling tasks
+              like medication, hygiene, meals, and medical appointments.
+            </p>
+            <p class="project-detail">
+              Carers log task completions and leave notes on activities
+              giving families insight into their loved one's well-being.
+            </p>
+            <div class="project-controls">
+              <a href="https://github.com/dudleyspence/PeaceOfMind-FE">
+                <img
+                  id="projectGithubIcon"
+                  class="icon"
+                  src="./assets/projects/github-light-mode.png"
+                  alt="the github logo"
+                />
+                <p>Front-end</p>
+              </a>
+              <a href="https://github.com/dudleyspence/PeaceOfMind-API">
+                <img
+                  id="projectGithubIcon"
+                  class="icon"
+                  src="./assets/projects/github-light-mode.png"
+                  alt="the github logo"
+                />
+                <p>Back-end</p>
+              </a>
+
+              <a href="https://peaceofmind-fe-production.up.railway.app">
+                <button class="styled-button">View Site</button>
+              </a>
+            </div>
           </div>
         </div>
+        <div class="ac" id="PeaceOfMind">
+          <h2 class="ac-header">
+              <button type="button" class="ac-trigger">Solving the N-puzzle using Deep Reinforcement Learning</button>
+          </h2>
+          <div class="ac-panel">
+
+            <p class="skills-used">
+              <span class="frontend-backend">Backend: </span>Python, tensorflow, numpy
+            </p>
+            <p class="project-detail" >
+              My MSc Computer Science dissertation used python and
+              tensorflow to create a deep reinforcement learning model
+              that learns to solve the N-puzzle.
+            </p>
+
+            <div class="project-controls">
+              <a href="https://github.com/dudleyspence/N-Puzzle-DQN">
+                <img
+                  id="projectGithubIcon"
+                  class="icon"
+                  src="./assets/projects/github-light-mode.png"
+                  alt="the github logo"
+                />
+                <p>Code</p>
+              </a>
+              <a
+                href="./assets/projects/Solving the N-Puzzle using Deep Reinforcement Learning.pdf"
+                download
+              >
+                <button class="styled-button">Download</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       </section>
+      
       <section id="contact">
         <h1 class="section-title">Contact</h1>
         <div class="section-container">
@@ -741,4 +718,9 @@
       </div>
     </footer>
   </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        new Accordion('.js-accordion');
+    });
+</script>
 </html>
