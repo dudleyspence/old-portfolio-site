@@ -32,12 +32,10 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script src="./index.js" defer></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
-      defer
-    ></script>
-    <script src="./swiper.js" defer></script>
-    <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js" defer></script>
+    <script src="./accordian.js" defer></script>
+
+
+    <!-- <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js" defer></script> -->
 
   </head>
   <body id="home">
@@ -446,7 +444,7 @@
       <section id="projects">
         <h1 class="section-title">Projects</h1>
         <div class="js-accordion">
-          <div class="ac" id="trailtalk">
+          <div class="ac is-active" id="trailtalk">
               <h2 class="ac-header">
                   <button type="button" class="ac-trigger">TrailTalk (Full-stack)</button>
               </h2>
@@ -581,7 +579,37 @@
             </div>
           </div>
         </div>
-        <div class="ac" id="PeaceOfMind">
+        <div class="ac" id="FrenchJourney">
+          <h2 class="ac-header">
+              <button type="button" class="ac-trigger">French Language App (Full-stack)</button>
+          </h2>
+          <div class="ac-panel">
+            <p class="skills-used">
+              <span class="frontend-backend">Frontend: </span>Next.Js, tailwind, Axios
+            </p>
+            <p class="skills-used">
+              <span class="frontend-backend">Backend: </span> MongoDB
+            </p>
+            <p class="project-detail" >
+              This simple app acts as a vocabulary storage tool for remembering new french nouns and verbs. It features tools like search functionality, verb conjugation tables and gender adaptive prenoun tables.
+            </p>
+            <div class="project-controls">
+              <a href="https://github.com/dudleyspence/french-learning-journey">
+                <img
+                  id="projectGithubIcon"
+                  class="icon"
+                  src="./assets/projects/github-light-mode.png"
+                  alt="the github logo"
+                />
+                <p>Code</p>
+              </a>
+              <a href="https://french-learning-journey-production.up.railway.app/">
+                <button class="styled-button">View Site</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="ac" id="NPuzzle">
           <h2 class="ac-header">
               <button type="button" class="ac-trigger">Solving the N-puzzle using Deep Reinforcement Learning</button>
           </h2>
