@@ -15,6 +15,7 @@
   .project-title {
     scale: 0.6;
   }
+
   #experience-container {
     flex-direction: row;
   }
@@ -263,6 +264,10 @@
   .skills-container {
     flex-direction: row;
     height: auto;
+  }
+
+  #projects {
+    gap: 1rem;
   }
 }
 
