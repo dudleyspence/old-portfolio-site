@@ -66,3 +66,21 @@ section {
   height: 10vh;
   box-sizing: border-box;
 }
+
+.icon {
+  fill: var(--text-color) !important;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+path {
+  height: 10px !important;
+}
+
+.icon-reverse {
+  fill: var(--background-color) !important;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}

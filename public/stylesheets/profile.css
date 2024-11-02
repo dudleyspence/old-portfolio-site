@@ -94,9 +94,3 @@ button {
   color: var(--background-color);
   cursor: pointer;
 }
-
-.icon {
-  height: 30px;
-  width: 30px;
-  cursor: pointer;
-}

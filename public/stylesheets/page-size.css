@@ -148,17 +148,12 @@
 
 /* Short Display */
 @media only screen and (orientation: portrait) and (max-height: 700px) {
-  .contact-form {
-    padding-top: 15px;
-    gap: 8px;
-  }
   .contact-form-container h3 {
     display: none;
   }
 
   .experience-features li {
     margin: calc(0.5vh + 0.5vw);
-    font-size: 0.4rem;
   }
 
   .skills-container img {
@@ -201,7 +196,7 @@
   }
 }
 
-@media only screen and (orientation: landscape) and (max-height: 435px) {
+@media only screen and (orientation: landscape) and (max-height: 600px) {
   textarea {
     max-width: none !important;
   }
@@ -232,6 +227,7 @@
 
   .contact-form-container {
     width: 85vw;
+    height: 70vh;
   }
 
   .contact-form {
@@ -252,7 +248,7 @@
     height: 100%;
     width: 50%;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
 
@@ -275,5 +271,22 @@
   .skill-card {
     flex: none;
     width: 35px;
+  }
+}
+
+@media only screen and (min-width: 900px) and (min-height: 600px) {
+  .skills-container {
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+  }
+  .frontend-container,
+  .backend-container,
+  .database-container,
+  .extra-container {
+    width: 40% !important;
+    max-height: 300px;
   }
 }
