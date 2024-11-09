@@ -99,7 +99,7 @@
 
 .experience-features li {
   margin: calc(0.8vh + 0.9vw);
-  font-size: 9px;
+  font-size: 2vmin;
 }
 
 .course-grade,
