@@ -22,6 +22,7 @@
   padding: 15px !important;
   border-radius: 14px;
   box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.2);
+  max-height: 250px;
 }
 
 #frontend-skills,
@@ -62,6 +63,7 @@
   align-items: center;
   flex-direction: column;
   width: 40px;
+  gap: 0.3rem;
   height: 60px;
   overflow: visible;
 }
@@ -70,6 +72,7 @@
   display: none;
   margin-top: 0px;
   font-size: 8px;
+  margin-bottom: 0px;
   text-wrap: nowrap;
 }
 
